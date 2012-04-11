@@ -50,8 +50,8 @@ $(document).ready(function() {
 	    
 	} else if ($(this).hasClass("exploded")) {
 
-	    // do not process events for the #cc layer after exploding
-	    if ($(this).attr("id") == "cc") return;
+	    // do not process events for the #deck layer after exploding
+	    if ($(this).attr("id") == "deck") return;
 
 	    // focus on this layer
 	    
@@ -67,7 +67,7 @@ $(document).ready(function() {
     }); // on layer click    
     
     $("#getstarted").click(function(e) {
-	$("#cc").click();
+	$("#deck").click();
 	e.preventDefault();
     });
 
